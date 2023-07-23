@@ -104,6 +104,34 @@ body {
   font-size: 50px;
 }
 
+.groupMonth {
+  position: absolute;
+  font-size: 20px;
+  padding-top: 5em;
+  color: #C9CAC8;
+}
+
+.groups-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10em;
+  height: 10em;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #3690ea;
+  color: #feffff;
+  cursor: pointer;
+}
+
+.groups-content {
+  width: 100%;
+  min-width: 270px;
+  height: 270px;
+  white-space: nowrap;
+  font-size: 50px;
+}
+
 .number-content {
   font-size: 7em;
   width: 160px;

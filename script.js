@@ -101,6 +101,42 @@ for (const season of seasons) {
   seasonContainer.appendChild(bottomDiv);
 }
 
+// Create group elements
+const groupsContent = document.getElementById("groupsContent");
+const groups = [
+  "Group 1",
+  "Group 2",
+  "Group 3",
+  "Group 4",
+];
+const Sgroups = {
+  "Group 1": "January → March",
+  "Group 2": "April → June",
+  "Group 3": "July → September",
+  "Group 4": "October → December"
+};
+for (const group of groups) {
+  const groupContainer = document.createElement("div");
+  groupContainer.className = "groups-container";
+  groupsContent.appendChild(groupContainer);
+
+  const groupDiv = document.createElement("div");
+  groupDiv.className = "groups-content boxborder";
+  groupDiv.textContent = group;
+
+  const groupMonthDiv = document.createElement("div");
+  groupMonthDiv.className = "groupMonth";
+  groupMonthDiv.textContent = Sgroups[group];
+
+  groupDiv.appendChild(groupMonthDiv);
+  groupContainer.appendChild(groupDiv);
+
+  const bottomDiv = document.createElement("div");
+  bottomDiv.className = "bottom";
+  bottomDiv.textContent = "Ready";
+  groupContainer.appendChild(bottomDiv);
+}
+
 // Function to handle the countdown logic
 function startCountdown(container) {
   const bottomElement = container.querySelector(".bottom");
